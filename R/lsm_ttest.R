@@ -49,7 +49,8 @@ lsm_ttest <- function(lesmat, behavior,
                       checkAssumptions = TRUE,
                       showInfo = TRUE,
                       ...) {
-
+					  
+	cat(sprintf('*** Place to modify ***\n'))
   # check assumptions only for t-test, not for welch
   if (var.equal & checkAssumptions) checkAssumptions_ttest(lesmat, behavior, showInfo=showInfo, ...)
 
